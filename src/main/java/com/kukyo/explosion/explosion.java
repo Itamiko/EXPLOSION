@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.kukyo.explosion;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.event.RegistryEvent;
@@ -10,13 +10,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("examplemod")
-public class ExampleMod
+@Mod("explosion")
+public class explosion
 {
 	// Directly reference a log4j logger.
 	private static final Logger LOGGER = LogManager.getLogger();
 
-	public ExampleMod() {
+	public explosion() {
 		// Register the setup method for modloading
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 	}
